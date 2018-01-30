@@ -11,5 +11,6 @@ answers_list = [ "It is certain", "It is decidedly so", "Without a doubt", "Yes 
 while response != "quit":
     if response[-1] is not "?":
         print("I'm sorry, I can only answer questions.")
-    print(answers_list[random.randrange(0,19)])
+    else:
+        print(answers_list[random.randrange(0,19)])
     response = input("Ask another question: ")
