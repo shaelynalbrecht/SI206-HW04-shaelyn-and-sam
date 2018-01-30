@@ -1,8 +1,7 @@
 import random
 
 response = input("What is your question? ")
-if response[-1] is not "?":
-    print("I'm sorry, I can only answer questions.")
+
 
 answers_list = [ "It is certain", "It is decidedly so", "Without a doubt", "Yes definitely", "You may rely on it",
 "As I see it, yes", "Most likely", "Outlook good", "Yes", "Signs point to yes", "Reply hazy try again", "Ask again later",
@@ -10,5 +9,7 @@ answers_list = [ "It is certain", "It is decidedly so", "Without a doubt", "Yes 
 "My sources say no", "Outlook not so good", "Very doubtful"]
 
 while response != "quit":
-    response = input("Ask another question: ")
+    if response[-1] is not "?":
+        print("I'm sorry, I can only answer questions.")
     print(answers_list[random.randrange(0,19)])
+    response = input("Ask another question: ")
