@@ -12,4 +12,4 @@ answers_list = [ "It is certain", "It is decidedly so", "Without a doubt", "Yes 
 "Better not tell you now", "Cannot predict now", "Concentrate and ask again", "Don't count on it", "My reply is no",
 "My sources say no", "Outlook not so good", "Very doubtful"]
 
-answers_list[random.randrange(0,19)]
+print(answers_list[random.randrange(0,19)])
